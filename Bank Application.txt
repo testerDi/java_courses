@@ -1,0 +1,53 @@
+title Bank Application
+
+class BankApplication {
+  +static main()
+}
+
+class Bank {
+  -List<Client> clients
+  +void addClient(Client client)
+  +List<Client> getClients()
+}
+
+class Client {
+  -String name
+  -List<Account> accounts
+  +Client(String name)
+  +void addAccount(Account account)
+  +List<Account> getAccounts()
+}
+
+class Account {
+  -int id
+  -double balance
+  +double getBalance()
+  +void deposit(double amount)
+  +void withdraw(double amount)
+}
+
+Client "1" *-- "*" Account: have
+Client "*" --* "1" Bank: have
+BankApplication -- Bank
+
+
+
+
+class java.lang.Exception {
+}
+
+class BankException extends java.lang.Exception {
+}
+
+class ClientExistsException extends BankException {
+}
+
+class NotEnoughFundsException extends BankException {
+    -int id
+    -double balance
+    -double amount
+}
+
+class OverdraftLimitExceededException  extends NotEnoughFundsException{
+    -double overdraft
+}
