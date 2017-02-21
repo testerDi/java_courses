@@ -9,7 +9,7 @@ public class PrimitiveExample {
         int b = 10;
        int  c = foo(a, b);
         System.out.println("a = " + a + ", b = " + b+ ", c = " + c);
-        int nums[] = new int[];
+        int nums[] = new int[2];
     }
 
     static int foo(int x, int y){
