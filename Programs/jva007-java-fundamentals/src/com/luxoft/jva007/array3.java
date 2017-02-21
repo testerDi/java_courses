@@ -43,12 +43,18 @@ public class array3 {
                 int k = arr[j][i];
                 arr[j][i] = arr[i][j];
                 arr[i][j] = k;
-                System.out.print(arr[i][j] + " ");
+
             }
             System.out.println();
         }
 
+        for (int i = 0; i < num; i++) {
+            for (int j = 0; j < num; j++) {
 
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }
 
