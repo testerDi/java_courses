@@ -5,6 +5,10 @@ import com.luxoft.jva007.exampleZoom.Zoom.*;
  */
 public class Main {
     public static void main(String[] args) {
+
+        FishUseConstructure littleFish = new FishUseConstructure(true, true);
+        System.out.println(littleFish.getBoned());
+
         Fish fish1 = new Fish();
 
 
@@ -19,6 +23,7 @@ public class Main {
         insect1.setNum_of_Legs(4);
         insect1.setNum_of_Wings(10);
         insect1.fly(45, 456);
+
 
 
     }
