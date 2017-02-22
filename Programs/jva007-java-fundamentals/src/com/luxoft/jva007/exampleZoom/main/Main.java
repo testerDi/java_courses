@@ -9,6 +9,11 @@ public class Main {
         FishUseConstructure littleFish = new FishUseConstructure(true, true);
         System.out.println(littleFish.getBoned());
 
+        InsectUseConstructure littleInsect = new InsectUseConstructure(6,7);
+        System.out.println(littleInsect.getNum_of_Legs());
+        System.out.println(littleInsect.getNum_of_Wings());
+
+
         Fish fish1 = new Fish();
 
 

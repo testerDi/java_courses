@@ -8,13 +8,17 @@ import com.luxoft.jva007.exampleZoom.Interface.Swimmer;
 public class FishUseConstructure extends Zoom implements Swimmer {
     private boolean seaFish;
     private boolean  boned;
-    private int distance;
+
+    public  FishUseConstructure(){
+        this.boned = true;
+        this.seaFish = false;
+    }
 
     public FishUseConstructure( boolean boned, boolean seaFish){
-        this.name = name;
+
         this.boned = boned;
         this.seaFish = seaFish;
-        this.distance = distance;
+
 }
 
 
