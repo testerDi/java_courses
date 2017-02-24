@@ -26,13 +26,18 @@ public class iCalculator {
         }
 
 
-
-
-
     public static void main(String args[]){
       double result;
+      double  halfresult;
       double operand1 = 0;
       double operand2 = 0;
+      double operand3 = 0;
+
+        if((args[1].equals( '*') || args[1].equals( '/')))
+        {
+            halfresult = operand1*operand2;
+
+        }
 
         if (args.length!=3){
             System.out.println("It should be 3 arguments");
@@ -43,16 +48,16 @@ public class iCalculator {
         }
         operand1 = Double.parseDouble(args[0]);
         operand2 = Double.parseDouble(args[2]);
-
+        operand3 = Double.parseDouble(args[4]);
 
 
 
         switch (args[1]){
             case "+":
-                result = operand1 + operand2;
+                result = operand1 + operand2 + operand3;
                 break;
             case "-":
-                result = operand1 - operand2;
+                result = operand1 - operand2 - operand3;
                 break;
             case "x":
                 result = operand1 * operand2;
