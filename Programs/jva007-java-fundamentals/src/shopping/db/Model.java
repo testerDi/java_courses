@@ -20,10 +20,28 @@ public class Model {
     }
 
     private List<Product> products = new ArrayList<>();
-
+    private List<String> productsPurchased = new ArrayList<>();
     public List<Product> getProducts() {
         return products;
     }
+
+
+    public int getBalance() {
+        return balance;
+    }
+    public List<String> getProductsPurchased() {
+        return productsPurchased;
+    }
+
+    public void setBalance(int balance) {
+        this.balance = balance;
+    }
+
+    public Model(int balance) {
+        this.balance = balance;
+    }
+
+    private int balance = 1000;
     private List<Manufacturer> manufacturers = new ArrayList<>();
 
     public List<Manufacturer> getManufacturers() {

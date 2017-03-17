@@ -7,7 +7,7 @@ public class MainMenu implements Action {
 
     @Override
     public void showPrompt() {
-        String prompt = "1 - Product list\n" + "0 - Exit";
+        String prompt = "1 - Product list\n" + "2 - Manufacturer list\n" +"0 - Exit\n";
         System.out.println(prompt);
 
     }
@@ -17,11 +17,12 @@ public class MainMenu implements Action {
         switch (i) {
             case 1:
                 return new ProductList();
+            case 2:
+                return new ManufacturerList();
 
             case 0:
                 System.out.println("System is exit");
                 System.exit(0);
-
 
                 default:
                     return this;
